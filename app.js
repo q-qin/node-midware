@@ -76,5 +76,5 @@ app.use(expressWinston.errorLogger({
 
 app.use(history());
 app.use(express.static('./public'));
-app.listen(config.port);
+app.listen(config.port,'0.0.0.0');
 httpsServer.listen(config.portSSL);
